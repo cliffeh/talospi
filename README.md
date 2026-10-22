@@ -64,6 +64,8 @@ accept their first configuration without client certificates; if a node was flas
 different Talos version or extensions than it's configured for, it is upgraded to match
 (an extra reboot).
 
+**CAVEAT:** Bootstrapping (`talosctl bootstrap`) is not included (yet) and needs to be done manually.
+
 ### Adding nodes to an existing cluster
 
 Add the node to `nodes`, then follow the same steps: apply with `-target` to get its image,
@@ -100,4 +102,3 @@ With `secrets_file` set, run `terraform apply` again. The secrets are imported, 
 schematics are recreated (Image Factory returns the same IDs for the same content), and
 already-configured nodes are reached with the client certificates derived from the secrets
 and re-applied in place. Nodes already on the right image are not upgraded.
-
