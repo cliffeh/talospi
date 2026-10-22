@@ -1,0 +1,6 @@
+overlay:
+  image: siderolabs/sbc-raspberrypi
+  name: ${overlay}
+customization:
+  systemExtensions:
+    officialExtensions: ${jsonencode(extensions)}

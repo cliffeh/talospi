@@ -1,0 +1,5 @@
+.terraform/
+
+secrets.yaml
+terraform.tfstate*
+terraform.tfvars
